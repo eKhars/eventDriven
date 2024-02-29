@@ -7,6 +7,7 @@ function App() {
 
   useEffect(() => {
     socket.on("receipt", () => {
+      alert("¡Nuevo recibo generado!");
       console.log("Nuevo recibo generado: ")
     });
   }, []);
